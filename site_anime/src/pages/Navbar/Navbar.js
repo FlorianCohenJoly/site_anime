@@ -1,21 +1,17 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { useRef } from 'react';
+import { useRef } from "react";
 
 const Navbar = () => {
     const buttonVariants = {
         initial: { scale: 1 },
         hover: { scale: 1.1 },
-        tap: { scale: 0.9 }
+        tap: { scale: 0.9 },
     };
 
-    const constraintsRef = useRef(null)
-
+    const constraintsRef = useRef(null);
 
     return (
-
-
-
         <nav className="navbar">
             <motion.ul className="navbar-list" ref={constraintsRef}>
                 <motion.li

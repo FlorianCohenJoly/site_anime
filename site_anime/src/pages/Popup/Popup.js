@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import './popup.css';
 
 const Popup = ({ title, message, title_button }) => {
     const [isOpen, setIsOpen] = useState(false);
