@@ -1,0 +1,74 @@
+
+
+
+@keyframes scaleIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .navbar-item:hover {
+    background-color: #555;
+  }
+  
+  /* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+  
+  /* Menu Toggle Button */
+  .navbar-toggle {
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .navbar-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .open {
+    transform: rotate(45deg);
+  }

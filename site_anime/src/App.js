@@ -1,10 +1,8 @@
-import Layout from './layout/Layout';
+import Layout from "./layout/Layout";
 
 function App() {
-
   return (
     <div className="App">
-
       <Layout />
     </div>
   );

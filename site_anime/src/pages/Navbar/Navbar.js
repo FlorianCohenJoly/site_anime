@@ -1,6 +1,9 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import './navbar.scss';
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     const buttonVariants = {
@@ -15,13 +18,14 @@ const Navbar = () => {
         <nav className="navbar">
             <motion.ul className="navbar-list" ref={constraintsRef}>
                 <motion.li
+
                     className="navbar-item"
                     variants={buttonVariants}
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     drag
                     dragConstraints={constraintsRef}
                 >
-                    Accueil
+                    <Link to="/">Accueil</Link>
                 </motion.li>
                 <motion.li
                     className="navbar-item"
@@ -30,7 +34,7 @@ const Navbar = () => {
                     drag
                     dragConstraints={constraintsRef}
                 >
-                    Services
+                    <Link to="/">Accueil</Link>
                 </motion.li>
                 <motion.li
                     className="navbar-item"
@@ -39,7 +43,7 @@ const Navbar = () => {
                     drag
                     dragConstraints={constraintsRef}
                 >
-                    À Propos
+                    <Link to="/">Accueil</Link>
                 </motion.li>
             </motion.ul>
         </nav>
